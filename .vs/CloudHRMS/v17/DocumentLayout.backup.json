@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\WebApplicationMVC\\CloudHRMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|c:\\webapplicationmvc\\cloudhrms\\cloudhrms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|c:\\webapplicationmvc\\cloudhrms\\cloudhrms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|c:\\webapplicationmvc\\cloudhrms\\cloudhrms\\cloudhrms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\cloudhrms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|c:\\webapplicationmvc\\cloudhrms\\cloudhrms\\dao\\hrmsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\dao\\hrmsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|c:\\webapplicationmvc\\cloudhrms\\cloudhrms\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|c:\\webapplicationmvc\\cloudhrms\\cloudhrms\\models\\employeeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBBFA19-1A7D-49D2-ABA5-A1ABC78FC138}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\models\\employeeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HRMSDbContext.cs",
+              "DocumentMoniker": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\DAO\\HRMSDbContext.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\DAO\\HRMSDbContext.cs",
+              "ToolTip": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\DAO\\HRMSDbContext.cs",
+              "RelativeToolTip": "CloudHRMS\\DAO\\HRMSDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T14:45:19.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\appsettings.json",
+              "RelativeDocumentMoniker": "CloudHRMS\\appsettings.json",
+              "ToolTip": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\appsettings.json",
+              "RelativeToolTip": "CloudHRMS\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-21T14:37:41.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeEntity.cs",
+              "DocumentMoniker": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\Models\\EmployeeEntity.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\Models\\EmployeeEntity.cs",
+              "ToolTip": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\Models\\EmployeeEntity.cs",
+              "RelativeToolTip": "CloudHRMS\\Models\\EmployeeEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T14:07:15.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\Models\\BaseEntity.cs",
+              "ToolTip": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "CloudHRMS\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T14:02:05.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CloudHRMS",
+              "DocumentMoniker": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\CloudHRMS.csproj",
+              "RelativeDocumentMoniker": "CloudHRMS\\CloudHRMS.csproj",
+              "ToolTip": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\CloudHRMS.csproj",
+              "RelativeToolTip": "CloudHRMS\\CloudHRMS.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-21T13:51:34.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\Program.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\Program.cs",
+              "ToolTip": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\Program.cs",
+              "RelativeToolTip": "CloudHRMS\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T13:51:10.826Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
