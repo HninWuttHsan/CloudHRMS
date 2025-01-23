@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zt/yiHTF8sI=",
+  "dgSpecHash": "e3/T3tdYgCU=",
   "success": true,
-  "projectFilePath": "C:\\WebApplicationMVC\\CloudHRMS\\CloudHRMS\\CloudHRMS.csproj",
+  "projectFilePath": "C:\\GitPratice\\PrivateRepository\\CloudHRMS\\CloudHRMS\\CloudHRMS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hninw\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\hninw\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

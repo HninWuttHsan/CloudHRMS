@@ -1,4 +1,4 @@
-﻿using CloudHRMS.Models;
+﻿using CloudHRMS.Models.DataModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace CloudHRMS.DAO
@@ -10,5 +10,6 @@ namespace CloudHRMS.DAO
         }
         // Has-a Relationship for all of the entities DBSet
         public DbSet<EmployeeEntity> Employees { get; set; }
+        public DbSet<DepartmentEntity> Departments { get; set; }
     }
 }

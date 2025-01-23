@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Entry";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Employee Form</h2>
+
+        @if (ViewBag.Msg != null){
+            <div class="alert alert-success" role="alert">
+                @ViewBag.Msg
+            </div>
+        }
+        <form action="/employee/entry" method="post">
+            <div class="form-group">
+                <label for="employeeCode">Employee Code:</label>
+                <input type="text" class="form-control" name="Code" id="employeeCode" placeholder="Enter Employee Code">
+            </div>
+            <div class="form-group">
+                <label for="name">Employee Name:</label>
+                <input type="text" class="form-control" name="Name" id="name" placeholder="Enter Employee Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Employee Email:</label>
+                <input type="email" class="form-control" id="email" name="Email" placeholder="Enter Employee Email">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Gender" id="male" value="M">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Gender" id="female" value="F" checked>
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" name="DOB" "dob" placeholder="Select Employee DOB" max="@DateTime.Now.ToString("yyyy-MM-dd")"><!--today is maximum-->
+            </div>
+            <div class="form-group">
+                <label for="doe">Employee DOE</label>
+                <input type="date" class="form-control" name="DOE" id="doe" placeholder="Select Employee DOE">
+            </div>
+            <div class="form-group">
+                <label for="dor">Employee DOR</label>
+                <input type="date" class="form-control" name="DOR" id="dor" placeholder="Select Employee DOR">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" id="address" name="Address" rows="3" placeholder="Enter Employee Address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="basicSalary">BasicSalary:</label>
+                <input type="number" class="form-control" name="BasicSalary" id="basicSalary" placeholder="Enter Employee BasicSalary">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" class="form-control" name="Phone" id="phone" placeholder="Enter Employee Phone Number">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="border-color: #00008B; background-color: #00008B;">Entry</button>
+            <button type="reset" class="btn btn-primary" style="border-color: #dc3545; background-color: #dc3545;">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
