@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CloudHRMS",
+    "\\CloudHRMS\\Controllers",
+    "\\CloudHRMS\\DAO",
+    "\\CloudHRMS\\Models"
   ],
+  "SelectedNode": "\\CloudHRMS\\Controllers",
   "PreviewInSolutionExplorer": false
 }

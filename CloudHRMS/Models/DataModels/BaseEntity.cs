@@ -5,6 +5,7 @@ namespace CloudHRMS.Models.DataModels
     public abstract class BaseEntity
     {
         [Key]
+        [MaxLength(36)]
         public required string Id { get; set; } // for primary key in DB
         public required DateTime CreatedAt { get; set; } // for audi purpose
         public required string CreatedBy { get; set; }// for audir purpose

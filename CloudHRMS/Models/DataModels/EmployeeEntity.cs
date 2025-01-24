@@ -7,6 +7,7 @@ namespace CloudHRMS.Models.DataModels
     [Table("Employee")] // Model Attribute in mVC
     public class EmployeeEntity : BaseEntity
     {
+
         public required string Code { get; set; }
         public required string Name { get; set; }
         public required string Email { get; set; }
@@ -19,6 +20,13 @@ namespace CloudHRMS.Models.DataModels
         [Precision(18, 2)]// Model Attribute in MVC
         public required decimal BasicSalary { get; set; }
         public required string Phone { get; set; }
+
+        // foreign key in here
+        [ForeignKey("nameof(DepartmentId)")] // [ForeignKey(("DepartmentId")]
+        public required string DepartmentId { get; set; }
+        // foreign key in here
+        [ForeignKey("nameof(PositionId)")]
+        public required string PositionId { get; set; }
 
 
 

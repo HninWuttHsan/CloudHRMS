@@ -14,9 +14,28 @@ namespace CloudHRMS.Controllers
         {
             _hRMSDbContext = hRMSDbContext;
         }
-        public IActionResult Ilist()
+        public IActionResult List()
         {
-            return View();
+            IList<EmployeeViewModel> employees = _hRMSDbContext.Employees.Where(w => w.IsActive == true).Select(
+                s => new EmployeeViewModel()
+                {
+                    // in view model required daclared
+                    Id = s.Id,
+                    Code = s.Code,
+                    Name = s.Name,
+                    Address = s.Address,
+                    BasicSalary = s.BasicSalary,
+                    DOE = s.DOE,
+                    DOB = s.DOB,
+                    DOR = s.DOR,
+                    Email = s.Email,
+                    Phone = s.Phone,
+                    Gender = s.Gender,
+                    DepartmentId = s.DepartmentId,
+                    PositionId = s.PositionId,
+                }).ToList();
+
+            return View(employees);
         }
 
         [HttpGet]
@@ -30,6 +49,7 @@ namespace CloudHRMS.Controllers
         {
             try
             {
+                // UI ( Viewmodel to datamodel
                 //DTO>. data transfer object process in here
                 var employeeEntity = new EmployeeEntity()
                 {
@@ -43,7 +63,9 @@ namespace CloudHRMS.Controllers
                     Phone = employeeViewModel.Phone,
                     Address = employeeViewModel.Address,
                     BasicSalary = employeeViewModel.BasicSalary,
-                    Gender = employeeViewModel.Gender,
+                    Gender = employeeViewModel.Gender, // for testing purpose
+                    DepartmentId = employeeViewModel.DepartmentId,
+                    PositionId = employeeViewModel.PositionId,
                     // for audit purpose column
                     CreatedAt = DateTime.Now,
                     CreatedBy = "system",
@@ -59,6 +81,89 @@ namespace CloudHRMS.Controllers
                 ViewBag.Msg = "Error Occur when employee record is created.";// show the status message in ENGLISH ONLY (we don't support muti-languages) if you want to show using key file (e.g A is kakyi)
             }
             return View();
+        }
+
+        public IActionResult DeleteById(string id)
+        {
+            try
+            {
+                EmployeeEntity employee = _hRMSDbContext.Employees.Where(w => w.IsActive && w.Id == id).SingleOrDefault();
+                if (employee is not null)
+                {
+                    employee.IsActive = false;
+                    _hRMSDbContext.Employees.Update(employee);
+                    _hRMSDbContext.SaveChanges();
+                    TempData["Msg"] = "Employee record is delected successfully";
+
+                }
+            }
+            catch (Exception e)
+            {
+                TempData["Msg"] = "Error occur when employee record is delected.";
+
+            }
+            return RedirectToAction("list");
+        }
+
+        public IActionResult Edit(string id)
+        {
+            EmployeeViewModel employee = _hRMSDbContext.Employees.Where(w => w.IsActive && w.Id == id).Select(
+                s => new EmployeeViewModel()
+                {
+                    // in view model required daclared
+                    Id = s.Id,
+                    Code = s.Code,
+                    Name = s.Name,
+                    Address = s.Address,
+                    BasicSalary = s.BasicSalary,
+                    DOE = s.DOE,
+                    DOB = s.DOB,
+                    DOR = s.DOR,
+                    Email = s.Email,
+                    Phone = s.Phone,
+                    Gender = s.Gender,
+                    DepartmentId = s.DepartmentId,
+                    PositionId = s.PositionId,
+
+                }).SingleOrDefault();
+
+            return View(employee);
+        }
+
+        [HttpPost]
+        public IActionResult Update(EmployeeViewModel employeeViewModel)
+        {
+            try
+            {
+                EmployeeEntity employee = _hRMSDbContext.Employees.Where(w => w.IsActive && w.Id == employeeViewModel.Id).SingleOrDefault(); // take from data server
+                if (employee is not null)
+                {
+                    // change data  UI ( Viewmodel) to datamodel (DB/ Server)
+                    employee.Name = employeeViewModel.Name;
+                    employee.DOE = employeeViewModel.DOE;
+                    employee.DOB = employeeViewModel.DOB;
+                    employee.DOR = employeeViewModel.DOR;
+                    employee.Phone = employeeViewModel.Phone;
+                    employee.Address = employeeViewModel.Address;
+                    employee.BasicSalary = employeeViewModel.BasicSalary;
+                    employee.Gender = employeeViewModel.Gender;
+
+                    employee.UpdatedAt = DateTime.Now;
+                    employee.UpdatedBy = "system";
+                    employee.Ip = NetworkHelper.GetIpAddress();
+
+                    _hRMSDbContext.Employees.Update(employee);
+                    _hRMSDbContext.SaveChanges();
+                    TempData["Msg"] = "Employee record is updated successfully";
+
+                }
+            }
+            catch (Exception e)
+            {
+                TempData["Msg"] = "Error occur when employee record is updated.";
+
+            }
+            return RedirectToAction("list");
         }
     }
 }
